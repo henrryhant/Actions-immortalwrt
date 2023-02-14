@@ -22,4 +22,4 @@ sed -i "/^PKG_SOURCE:=/cPKG_SOURCE_PROTO:=git" feeds/packages/net/smartdns/Makef
 sed -i "/^PKG_SOURCE_URL:=/cPKG_SOURCE_URL:=https://www.github.com/pymumu/smartdns.git" feeds/packages/net/smartdns/Makefile
 sed -i "/^PKG_HASH:=/cPKG_SOURCE_VERSION:=db56472b845b12d47f59e63aa8411bdca3a6f004" feeds/packages/net/smartdns/Makefile
 sed -i "s/PKG_BUILD_DIR/#PKG_BUILD_DIR/" feeds/packages/net/smartdns/Makefile
-sed -i "50i     \$(INSTALL_DIR) \$(1)/etc/smartdns \$(1)/etc/smartdns/domain-set \$(1)/etc/smartdns/conf.d/" openwrt/feeds/packages/net/smartdns/Makefile
+sed -i "50i     \$(INSTALL_DIR) \$(1)/etc/smartdns \$(1)/etc/smartdns/domain-set \$(1)/etc/smartdns/conf.d/" feeds/packages/net/smartdns/Makefile
