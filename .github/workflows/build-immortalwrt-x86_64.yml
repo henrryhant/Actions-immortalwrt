@@ -66,19 +66,6 @@ jobs:
         chmod +x $DIY_P1_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
-        
-    - name: luci-theme-argon install
-      run: |
-       cd openwrt
-       mkdir -p package/greenice
-       cd package/greenice
-       git clone https://github.com/jerrykuku/luci-theme-argon.git
-       
-    - name: luci-app-argon-config install
-      run: |
-       cd openwrt
-       cd package/greenice
-       git clone https://github.com/jerrykuku/luci-app-argon-config.git
        
     - name: luci-app-adguardhome
       run: |
