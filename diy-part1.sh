@@ -9,4 +9,9 @@
 # File name: diy-part1.sh
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 #
+mkdir -p package/greenice
+cd package/greenice
+git clone https://github.com/kongfl888/luci-app-adguardhome.git
+git clone https://github.com/jerrykuku/luci-theme-argon.git
+git clone https://github.com/jerrykuku/luci-app-argon-config.git
 exit 0
