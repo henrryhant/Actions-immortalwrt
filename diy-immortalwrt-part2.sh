@@ -19,7 +19,7 @@ sed -i 's/192.168.1.1/192.168.9.1/g' package/base-files/files/bin/config_generat
 ########### 更新smartdns版本 ###########
 rm -rf feeds/packages/net/smartdns
 git clone https://github.com/pymumu/openwrt-smartdns.git feeds/packages/net/smartdns
-sed -i "/^PKG_SOURCE_VERSION:=/cPKG_SOURCE_VERSION:=3c7b86eea755cf726a49d452a7b43ceeb01f2a06" feeds/packages/net/smartdns/Makefile
+# sed -i "/^PKG_SOURCE_VERSION:=/cPKG_SOURCE_VERSION:=3c7b86eea755cf726a49d452a7b43ceeb01f2a06" feeds/packages/net/smartdns/Makefile
 rm -rf feeds/luci/applications/luci-app-smartdns
 git clone https://github.com/pymumu/luci-app-smartdns.git feeds/luci/applications/luci-app-smartdns
 
